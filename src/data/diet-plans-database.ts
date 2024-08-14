@@ -369,7 +369,7 @@ export const useDietPlanStore = create<DietPlanState>((set) => ({
         foodItem: FoodItemsDB.getInstance().foodItemsMap[itemId],
         qta: qta ?? 0,
       };
-      console.log("[setMacroBaseline]");
+
       return { ...state, dietPlan };
     });
   },
@@ -440,11 +440,30 @@ export const getMacroGroupCalories = (
 ) => {
   const { weekId, dayId, mealType, macroType } = payload;
 
+  // if (dayId == "saturday" && mealType == "breakfast") {
+  //   console.log(
+  //     "[getMacroGroupCalories] macroType",
+  //     macroType,
+  //     "mealType",
+  //     mealType
+  //   );
+  // }
+
   const macroGroupItems =
     state.dietPlan.weeks[weekId].days[dayId].meals[mealType].macro[macroType]
       .items;
 
-  return calculateCalories(macroGroupItems, macroType);
+  if (dayId == "saturday" && mealType == "breakfast") {
+    console.log("[getMacroGroupCalories] macroGroupItems", macroGroupItems);
+  }
+
+  const calories = calculateCalories(
+    macroGroupItems,
+    macroType,
+    dayId == "saturday" && mealType == "breakfast"
+  );
+
+  return calories;
 };
 
 export const getMacroGroupBaselineCalories = (
@@ -498,15 +517,25 @@ export const getDayCalories = (
 
 const calculateCalories = (
   macroItems: Array<{ itemId: string; name: string; qta: number }>,
-  macroType: MacroType
+  macroType: MacroType,
+  debug: boolean = false
 ) => {
   const foodItems = FoodItemsDB.getInstance().foodItemsMacroMap[macroType];
 
   const totalCalories = macroItems.reduce((acc, item) => {
     const foodItem = foodItems.find((foodItem) => foodItem.id === item.itemId);
     if (!foodItem) return acc;
+    if (debug) {
+      console.log("[totalCalories] acc", acc);
+      console.log("[totalCalories] item", item);
+      console.log("[totalCalories] foodItem", foodItem);
+    }
     return acc + (foodItem.calories / foodItem.qta) * item.qta;
   }, 0);
+
+  if (debug) {
+    console.log("[calculateCalories] totalCalories", totalCalories);
+  }
 
   return totalCalories;
 };

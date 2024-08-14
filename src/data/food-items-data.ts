@@ -266,6 +266,21 @@ export const foodItemsData: FoodItem[] = [
     },
   },
   {
+    id: "1791",
+    name: "Yougourt caffe'",
+    brand: "Yomo",
+    qta: 100,
+    unit: "grams",
+    calories: 129,
+    type: "carbs",
+    macro: {
+      carbs: 17,
+      proteins: 3.9,
+      fats: 4.6,
+      fibers: 0.3,
+    },
+  },
+  {
     id: "17",
     name: "Albume",
     qta: 100,
@@ -536,7 +551,7 @@ export const foodItemsData: FoodItem[] = [
     },
   },
   {
-    id: "28",
+    id: "29",
     name: "Nocciole",
     qta: 100,
     unit: "grams",
@@ -546,6 +561,7 @@ export const foodItemsData: FoodItem[] = [
       carbs: 8.2,
       proteins: 15,
       fats: 62,
+      fibers: 9.4,
     },
   },
   {
@@ -652,6 +668,34 @@ export const foodItemsData: FoodItem[] = [
       carbs: 0,
       proteins: 0,
       fats: 91.6,
+    },
+  },
+  {
+    id: "859",
+    name: "Pesto genovese",
+    brand: "Conad",
+    qta: 100,
+    unit: "grams",
+    calories: 485,
+    type: "fats",
+    macro: {
+      carbs: 10,
+      proteins: 5,
+      fats: 47,
+    },
+  },
+  {
+    id: "98404",
+    name: "Ragù di carne (chianina/cinghiale)",
+    brand: "Conad",
+    qta: 100,
+    unit: "grams",
+    calories: 181,
+    type: "fats",
+    macro: {
+      carbs: 1.7,
+      proteins: 14,
+      fats: 13,
     },
   },
   {
