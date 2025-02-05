@@ -485,7 +485,7 @@ export const foodItemsData: FoodItem[] = [
     },
   },
   {
-    id: "279895",
+    id: "59435",
     name: "Fiore tonno",
     brand: "Findus",
     qta: 100,
