@@ -499,6 +499,20 @@ export const foodItemsData: FoodItem[] = [
     },
   },
   {
+    id: "334556",
+    name: "Filetto tonno (125g)",
+    brand: "Gran Mare",
+    qta: 100,
+    unit: "grams",
+    calories: 110,
+    type: "proteins",
+    macro: {
+      carbs: 0,
+      proteins: 26,
+      fats: 0.7,
+    },
+  },
+  {
     id: "2712",
     name: "Filetto orata",
     brand: "Gran Mare",
