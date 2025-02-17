@@ -445,15 +445,16 @@ export const foodItemsData: FoodItem[] = [
   },
   {
     id: "27",
-    name: "Filetto salmone selvaggio (gran mare)",
+    name: "Filetto salmone selvaggio (125g)",
+    brand: "Gran Mare",
     qta: 100,
     unit: "grams",
-    calories: 98,
+    calories: 99,
     type: "proteins",
     macro: {
       carbs: 0,
       proteins: 19,
-      fats: 2.4,
+      fats: 2.5,
     },
   },
   {
