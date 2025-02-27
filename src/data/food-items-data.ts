@@ -486,6 +486,20 @@ export const foodItemsData: FoodItem[] = [
     },
   },
   {
+    id: "294037",
+    name: "Cuore filetto salmone selvaggio Alaska (125g)",
+    brand: "Conad",
+    qta: 100,
+    unit: "grams",
+    calories: 81,
+    type: "proteins",
+    macro: {
+      carbs: 0,
+      proteins: 17,
+      fats: 1.4,
+    },
+  },
+  {
     id: "59435",
     name: "Fiore tonno",
     brand: "Findus",
