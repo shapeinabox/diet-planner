@@ -266,6 +266,21 @@ export const foodItemsData: FoodItem[] = [
     },
   },
   {
+    id: "14654",
+    name: "Cracker riso su riso",
+    brand: "Galbusera",
+    qta: 1,
+    unit: "pieces",
+    calories: 34,
+    type: "carbs",
+    macro: {
+      carbs: 5.2,
+      proteins: 0.9,
+      fats: 1,
+      fibers: 0.5,
+    },
+  },
+  {
     id: "1791",
     name: "Yougourt caffe'",
     brand: "Yomo",
