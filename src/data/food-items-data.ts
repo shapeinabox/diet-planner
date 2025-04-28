@@ -296,6 +296,20 @@ export const foodItemsData: FoodItem[] = [
     },
   },
   {
+    id: "9403",
+    name: "Miele",
+    qta: 100,
+    unit: "grams",
+    calories: 304,
+    type: "carbs",
+    macro: {
+      carbs: 80,
+      proteins: 0,
+      fats: 0,
+      fibers: 0,
+    },
+  },
+  {
     id: "17",
     name: "Albume",
     qta: 100,
