@@ -200,6 +200,20 @@ export const foodItemsData: FoodItem[] = [
     },
   },
   {
+    id: "1359",
+    name: "Piselli freschi",
+    qta: 100,
+    unit: "grams",
+    calories: 81,
+    type: "carbs",
+    macro: {
+      carbs: 14.5,
+      proteins: 5.5,
+      fats: 0.6,
+      fibers: 5.1,
+    },
+  },
+  {
     id: "14",
     name: "Wasa/Gallette",
     qta: 1,
