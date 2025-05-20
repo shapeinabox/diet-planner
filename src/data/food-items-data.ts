@@ -295,6 +295,21 @@ export const foodItemsData: FoodItem[] = [
     },
   },
   {
+    id: "93025",
+    name: "Cracker proteici",
+    brand: "Misura",
+    qta: 1,
+    unit: "pieces",
+    calories: 30,
+    type: "carbs",
+    macro: {
+      carbs: 4.2,
+      proteins: 1,
+      fats: 0.9,
+      fibers: 0.4,
+    },
+  },
+  {
     id: "1791",
     name: "Yougourt caffe'",
     brand: "Yomo",
