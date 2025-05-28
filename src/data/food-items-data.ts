@@ -600,6 +600,20 @@ export const foodItemsData: FoodItem[] = [
     },
   },
   {
+    id: "95948",
+    name: "Filetto orata",
+    brand: "Conad",
+    qta: 100,
+    unit: "grams",
+    calories: 190,
+    type: "proteins",
+    macro: {
+      carbs: 2.8,
+      proteins: 20,
+      fats: 11,
+    },
+  },
+  {
     id: "2498",
     name: "Filetto pesce spada",
     qta: 100,
