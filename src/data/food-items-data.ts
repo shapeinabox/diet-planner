@@ -516,6 +516,20 @@ export const foodItemsData: FoodItem[] = [
     },
   },
   {
+    id: "2943",
+    name: "Filetto salmone (125g)",
+    brand: "Gran Mare",
+    qta: 100,
+    unit: "grams",
+    calories: 243,
+    type: "proteins",
+    macro: {
+      carbs: 0,
+      proteins: 20,
+      fats: 18,
+    },
+  },
+  {
     id: "271",
     name: "Filetto salmone",
     brand: "Bofrost",
